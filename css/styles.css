@@ -1,0 +1,304 @@
+@charset "utf-8";
+	
+body{
+	background-image: url("../img/fondoheader.png");
+	background-repeat: no-repeat;
+	background-size: 125%;
+	font-family:'Montserrat Alternates', sans-serif; 
+	background-color: #333333;
+}
+		
+headercontent{
+	width: 100%;
+	height: 100px;
+}
+
+#logo {
+	position: absolute;
+	height: 100px;
+	right: 60px;
+	top:20px;
+}
+
+#name{
+	font-weight: bolder;
+	text-shadow: 5px 5px 10px rgba(0,0,0, .7); 
+	color: #333333;
+	font-size: 150%;
+	margin-top: 0px;
+	margin-left: 60px;
+	height: 100px;
+
+}
+
+
+.menu{
+	box-shadow: none;
+	background-color: transparent;
+	height: 50px;
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 60px;
+}
+
+.menu ol{
+	margin-top: 0px;
+	display: flex;
+	list-style: none;
+}
+
+.menu ol li {
+	color: white;
+	font-size: 35px;
+	padding: 0px 10px;
+	align-items: center;
+}
+
+.main{
+	background-image: url(../img/fondofooter.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center, bottom;
+}
+
+.hero{
+	display: flex;
+	width: 100%;
+	padding-top: 10%;
+	margin-bottom: 70px;
+}
+
+.hola{
+	align-content: center;
+	margin-left: 60px;
+	margin-right: 60px;
+}
+
+#holatxt{
+	color:#ebebff;
+	text-shadow: 5px 5px 10px rgba(0,0,0, .7); 
+	font-style: italic;
+	font-weight:bold;
+	font-size: 30px;
+	text-align: center;
+}
+
+/*carousel*/
+
+.carousel_contenedor{
+	width: 90%;
+	margin: auto;
+	margin-bottom: 70px;
+}
+
+.contenedor-titulo-controles{
+	color: white;
+	font-size: 35px;
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+}
+
+.contenedor-titulo-controles .indicadores button{
+	background: white;
+	height: 3px;
+	width: 10px;
+	cursor: pointer;
+	border: none;
+	margin-right: 2px;
+}
+
+.contenedor-titulo-controles .indicadores button:hover{
+	background: fuchsia;
+}
+/*contenedor principal y flechas*/
+.carousel_contenedor .contenedor-principal{
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.carousel_contenedor .contenedor-principal .flecha-iz,
+.carousel_contenedor .contenedor-principal .flecha-der{
+position: absolute;
+border: none;
+background: rgba(0, 0, 0, 0.3);
+font-size: 80px;
+height: 50%;
+top: calc(50% - 25%);
+line-height: 40px;
+width: 50px;
+color: white;
+cursor: pointer;
+z-index: 500;
+transition: .2s ease all;
+}
+
+.carousel_contenedor .contenedor-principal .flecha-iz:hover,
+.carousel_contenedor .contenedor-principal .flecha-der:hover{
+	background: rgba(0, 0, 0, 0.9);
+}
+
+.carousel_contenedor .contenedor-principal .flecha-iz{
+	left: 0;
+}
+.carousel_contenedor .contenedor-principal .flecha-der{
+	right: 0;
+}
+.proyectos-destacados img{
+height: 500px;
+}
+
+.carousel_contenedor .contenedor-imagenes{
+width: 100%;
+padding: 20px 0;
+overflow: hidden;
+scroll-behavior: smooth;
+}
+
+.carousel_contenedor .contenedor-imagenes .carousel{
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.carousel_contenedor .contenedor-imagenes .carousel .proyectos-destacados{
+	min-width: 30%;
+	transition: .3s ease all;
+	box-shadow: 5px 5px 10px rgba(0,0,0, .3);
+	padding: 20px;
+}
+
+.carousel_contenedor .contenedor-imagenes .carousel .proyectos-destacados img{
+	width: 90%;
+	vertical-align: top;
+	}
+
+.carousel_contenedor .contenedor-imagenes .carousel .proyectos-destacados.hover{
+	transform: scale(1.2);
+	transform-origin: center;
+}
+
+/*portafolio*/
+
+.contenedor_titulo{
+	color: white;
+	font-size: 35px;
+	width: 90%;
+	margin: auto;
+}
+
+.contenedor_proyectos{
+	width: 90%;
+	margin: auto;
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 70px;
+
+	
+	
+}
+
+.contenedor_proyectos .proyect_text{
+	color: #ebebff;
+	display: flex;
+	width: 50%;
+	padding: 50px;
+}
+
+.contenedor_proyectos .fondo_proyecto{
+	width: 50%;
+	background-color: #666666;
+	box-shadow: 5px 5px 10px rgba(0,0,0, .7);
+	padding: 20px;
+	text-align: center;
+}
+
+.contenedor_proyectos .fondo_proyecto h3{
+	color: white;
+}
+.contenedor_proyectos .fondo_proyecto .proyecto img{ 
+	width: 50%;
+	margin: 0px auto;
+
+	
+		
+}
+
+.contenedor_proyectos .proyecto video, audio{
+	width: 75%;
+}
+
+
+
+/*formulario*/
+.footer{
+	display: flex;
+	background-image: url(../img/fondofooter.png);
+	background-repeat: space;
+	background-position: center;
+}
+
+.formulario{
+	width: 50%;
+	margin-left: 60px;
+}
+fieldset{
+	position: relative;
+	width: 80%;
+	background-color: #333333;
+	border: 2px solid #336666;
+	margin-bottom: 20px;
+
+	}
+#logo_form{
+	width: 40%;
+	position: absolute;
+	top: 100px;
+	right: 10px;
+	}
+legend{
+	color: white;
+}
+label{
+	display: block;
+	color: white;
+	}
+input{
+	background-color: #333333;
+	width: 50%;
+	margin-bottom: 10px;
+	
+	}
+#paises, #ciudad{
+	background-color: #333333;
+	width: 25%;
+	margin-bottom: 10px;
+}
+
+textarea{
+	background-color: #333333;
+	width: 90%;
+	height: 30%;
+	padding: 10px;
+}
+#boton_form{
+	background-color: #336666;
+	width: 20%;
+}
+
+.redes{
+	width: 50%;
+}
+
+.redes img{
+	width: 100px;
+	
+}
+
+
+/*@media (max-width: 600px) {
+	body {
+		background-color: antiquewhite;
+	}
+}*/
+

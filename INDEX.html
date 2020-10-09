@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<script src="https://kit.fontawesome.com/1782a76e04.js" crossorigin="anonymous"></script>
+		<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/styles.css">
+	<title>CN D.E.S.I.G.N</title>
+	
+	
+</head>
+<body class="body">
+		<header>
+		<div class="headercontent"> 
+			<img id="logo" src="img/milogo.png" alt="logo CN D.E.S.I.G.N">
+		 	<div id="name"> <h1>Catalina Navarro</h1></div>
+		</div>
+	</header>
+<nav class="menu" id="menu">
+	  <ol>
+	    <li>Portafolio</li>
+	    <li>Perfil</li>
+	    <li>Contacto</li>
+      </ol>
+</nav>
+	<main class="main">
+		<hero class="hero">
+			<div class="hola">
+	  			<p id="holatxt">Hola, mi nombre es Catalina Navarro. Soy productora multimedia. Conoce mi trabajo</p>
+			</div>
+	  </hero>
+
+		<!--carousel-->
+		<div class="carousel_contenedor">
+			<div class="contenedor-titulo-controles">
+				<p>Proyectos Destacados</p>
+				<div class="indicadores"></div>
+			</div>
+			<div class="contenedor-principal">
+				<button role="button" id="flecha-iz" class="flecha-iz"><i class="fas fa-angle-left"></i></button>
+
+				<div class="contenedor-imagenes">
+					<div class="carousel">
+						<div class="proyectos-destacados">
+							<a href="#"><img src="img/slider_iz.png" alt="pagina de viajes"></a>
+						</div>
+						<div class="proyectos-destacados">
+							<a href="#"><img src="img/4756.png" alt="fotografia"></a>
+						</div>
+						<div class="proyectos-destacados">
+							<a href="#"><img src="img/slider_der.png" alt="pagina de yoga"></a>
+						</div>
+						<div class="proyectos-destacados">
+							<a href="#"><img src="img/slider_der.png" alt="pagina de yoga"></a>
+						</div>
+						<div class="proyectos-destacados">
+							<a href="#"><img src="img/4756.png" alt="fotografia"></a>
+						</div>
+						<div class="proyectos-destacados">
+							<a href="#"><img src="img/slider_iz.png" alt="pagina de viajes"></a>
+						</div>
+						<div class="proyectos-destacados">
+							<a href="#"><img src="img/slider_iz.png" alt="pagina de viajes"></a>
+						</div>
+						<div class="proyectos-destacados">
+							<a href="#"><img src="img/4756.png" alt="fotografia"></a>
+						</div>
+						<div class="proyectos-destacados">
+							<a href="#"><img src="img/slider_der.png" alt="pagina de yoga"></a>
+						</div>
+					</div>
+				</div>
+
+				<button role="button" id="flecha-der" class="flecha-der"><i class="fas fa-angle-right"></i></button>
+
+			</div>
+		</div>
+		
+
+
+		<section id="portafolio">
+			<div class="contenedor_titulo">
+			<p>Proyectos</p>
+			</div>
+			
+			<div class="contenedor_proyectos">		
+				<p class="proyect_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae non magni, nihil tempore blanditiis repellat dolore provident? Officia molestias dolorum voluptatem unde quaerat maiores id nulla, facilis repellat tempora! Dignissimos!</p>
+				<div class="fondo_proyecto">
+					<h3>Diseño Web</h3>
+					<div class="proyecto"><img src="img/enya.png" alt=""></div>
+				</div>	
+				
+			</div>
+
+			<div class="contenedor_proyectos">
+				<div class="fondo_proyecto">
+					<h3>Audio y Video</h3>
+					<div class="proyecto"><video src="img/Toma cafe HD.mp4" controls></video>
+						<audio src="img/Toma Café MP3.mp3" controls></audio>
+					</div>
+				</div>
+				<p class="proyect_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae non magni, nihil tempore blanditiis repellat dolore provident? Officia molestias dolorum voluptatem unde quaerat maiores id nulla, facilis repellat tempora! Dignissimos!</p>		
+			</div>
+
+
+		</section>
+	</main>	
+		<section class="footer">
+			<div class="formulario">
+					<form action="http://midominio.com/miservicioweb.php" method="POST">
+					<fieldset>
+						<legend id="legend"><h2>Datos de contacto</h2></legend>
+						<img src="img/milogo.png" id="logo_form" alt="logo cn design">
+					<label for="nombre">Nombre</label>
+					<input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" required>
+					<label for="apellido">Apellido</label><br>
+					<input type="text" name="apellido" id="apellido" placeholder="Primer apellido" required>
+					<label for="correo">Correo electronico</label>
+					<input type="email" name="correo" id="correo" placeholder="Tu correo electronico" required>
+					<!-- <label for="clave">Contraseña</label>
+					<input type="password" name="clave" id="clave" placeholder="Escribe tu Contraseña"> -->
+					<label for="paises">País</label>
+					<select name="paises" id="paises">
+						<option selected>Colombia</option>
+						<option>Ecuador</option>
+						<option>Peru</option>
+						<option>Otro en latinoamerica</option>
+						<option>Otro</option>
+					</select>
+					<!--datalist: sirven para escribir y dar una lista de autocompletado:-->
+					<label for="ciudad">Ciudad</label>
+					<input name="ciudad" id="ciudad" list="nombre_ciudades"/>
+					<datalist id="nombre_ciudades">
+						<option value="Bogotá">
+						<option value="Quito">
+						<option value="Lima">
+						<option value="La Paz">
+						<option value="Santiago">
+					</datalist>
+					<textarea name="solicitud" id="solicitud" placeholder="Escribe tu pregunta o solicitud" required></textarea>
+					<input type="submit" id="boton_form">
+					<input type="reset" id="boton_form">
+					<!--o en vez de input se puede usar button y funciona igual al seleccionar type-->
+				</fieldset>
+				</form>
+			</div>
+			<div class="redes">
+				<a href="https://www.linkedin.com/" target="_blank"><img src="img/linkedin_logo.png" alt="ir a linkedin"></a>
+				<a href="https://www.facebook.com/" target="_blank"><img src="img/facebook_logo.png" alt="ir a facebook"></a>
+				<a href="https://www.instagram.com/" target="_blank"><img src="img/instagram_logo.png" alt="ir a instagram"></a>
+				<a href="https://www.twitter.com/" target="_blank"><img src="img/twiter_logo.png" alt="ir a twitter"></a>
+			</div>	
+		</section>
+	
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
